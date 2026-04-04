@@ -13,15 +13,14 @@ import {
 } from "@/types";
 import { home } from "./index";
 
-// IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://demo.magic-portfolio.com";
+const baseURL: string = "https://adekolusamuel.me";
 
 const routes: RoutesConfig = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/blog": false,
+  "/gallery": false,
 };
 
 const display: DisplayConfig = {
@@ -37,30 +36,32 @@ const protectedRoutes: ProtectedRoutesConfig = {
 };
 
 // Import and set font for each variant
-import { Geist } from "next/font/google";
-import { Geist_Mono } from "next/font/google";
+import { Geist, Space_Mono, Inter } from "next/font/google";
 
-const heading = Geist({
+const heading = Space_Mono({
   variable: "--font-heading",
   subsets: ["latin"],
+  weight: ["400", "700"],
   display: "swap",
 });
 
-const body = Geist({
+const body = Inter({
   variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
 });
 
-const label = Geist({
+const label = Space_Mono({
   variable: "--font-label",
   subsets: ["latin"],
+  weight: ["400"],
   display: "swap",
 });
 
-const code = Geist_Mono({
+const code = Space_Mono({
   variable: "--font-code",
   subsets: ["latin"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -187,10 +188,10 @@ const mailchimp: MailchimpConfig = {
 // default schema data
 const schema: SchemaConfig = {
   logo: "",
-  type: "Organization",
-  name: "Once UI",
+  type: "Person",
+  name: "Samuel Adekolu (Samixx Yasuke)",
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: "contact@adekolusamuel.me",
 };
 
 // social links

@@ -27,9 +27,34 @@ import {
   SiNextdotjs,
   SiFigma,
   SiSupabase,
+  SiTypescript,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiRedis,
+  SiUbuntu,
+  SiLinux,
+  SiReact,
+  SiVite,
 } from "react-icons/si";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
+import { FaAws } from "react-icons/fa";
+
+import {
+  FaDiscord,
+  FaGithub,
+  FaLinkedin,
+  FaX,
+  FaThreads,
+  FaInstagram,
+  FaXTwitter,
+  FaFacebook,
+  FaPinterest,
+  FaWhatsapp,
+  FaReddit,
+  FaTelegram,
+} from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -64,6 +89,17 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
+  typescript: SiTypescript,
+  node: SiNodedotjs,
+  express: SiExpress,
+  mongodb: SiMongodb,
+  postgresql: SiPostgresql,
+  linux: SiLinux,
+  react: SiReact,
+  vite: SiVite,
+  aws: FaAws,
+  ubuntu: SiUbuntu,
+  redis: SiRedis,
 };
 
 export type IconLibrary = typeof iconLibrary;
