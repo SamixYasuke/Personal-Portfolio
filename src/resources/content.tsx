@@ -7,7 +7,7 @@ const person: Person = {
   name: "Samuel Adekolu (Samixx Yasuke)",
   role: "Fullstack Node.js Developer",
   avatar: "/images/me.jpg",
-  email: "contact@adekolusamuel.me",
+  email: "samueladekolu4@gmail.com",
   location: "Africa/Lagos", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -97,7 +97,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I am a Lagos-based Fullstack Node.js Developer with a strong foundation
+        I am a Lagos based Fullstack Node.js Developer with a strong foundation
         in backend engineering. I specialize in building scalable architectures,
         optimized databases, and seamless user interfaces using the modern
         JavaScript ecosystem.
