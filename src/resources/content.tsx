@@ -1,10 +1,10 @@
-import { About, Home, Newsletter, Person, Social, Work } from "@/types";
+import type { About, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Samuel",
   lastName: "Adekolu",
-  name: `Samuel Adekolu (Samixx Yasuke)`,
+  name: "Samuel Adekolu (Samixx Yasuke)",
   role: "Fullstack Node.js Developer",
   avatar: "/images/me.jpg",
   email: "contact@adekolusamuel.me",
@@ -38,7 +38,7 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/home.png",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
@@ -113,15 +113,15 @@ const about: About = {
         timeframe: "June 2025 – March 2026",
         role: "Fullstack Intern (Part-time)",
         achievements: [
-          <>
+          <span key="achievement-1">
             Contributed to the development of real estate management solutions,
             integrating complex backend logic with responsive frontend
             components.
-          </>,
-          <>
+          </span>,
+          <span key="achievement-2">
             Optimized database queries and API endpoints, improving overall
             system responsiveness.
-          </>,
+          </span>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -138,14 +138,14 @@ const about: About = {
         timeframe: "June 2024 – August 2024",
         role: "Backend Intern",
         achievements: [
-          <>
+          <span key="achievement-3">
             Developed and maintained robust backend services for high-traffic
             applications, focusing on performance and security.
-          </>,
-          <>
+          </span>,
+          <span key="achievement-4">
             Collaborated with a cross-functional team in an agile environment to
             deliver feature-rich API solutions under strict deadlines.
-          </>,
+          </span>,
         ],
         images: [],
       },
